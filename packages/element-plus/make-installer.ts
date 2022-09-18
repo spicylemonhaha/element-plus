@@ -1,6 +1,5 @@
 import { provideGlobalConfig } from '@element-plus/hooks'
 import { INSTALLED_KEY } from '@element-plus/constants'
-import { version } from './version'
 
 import type { App, Plugin } from '@vue/runtime-core'
 import type { ConfigProviderContext } from '@element-plus/tokens'
@@ -16,7 +15,6 @@ export const makeInstaller = (components: Plugin[] = []) => {
   }
 
   return {
-    version,
     install,
   }
 }
